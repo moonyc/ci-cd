@@ -1,0 +1,31 @@
+html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 3rem;
+    text-align: center;
+    background-color: #222024;
+    color: #f6f0ee;
+  }
+
+  div {
+    padding: 1rem 3rem;
+    text-align: left;
+  }
+  
+  #logo {
+    width: 7rem;
+    height: 7rem;
+    object-fit: contain;
+    margin-top: 2rem;
+  }
+  
+  h1 {
+    color: #e8d4b2;
+  }
+
+  a {
+    color: #e8d4b2;
+  }
