@@ -11,7 +11,7 @@ html {
   }
 
   div {
-    padding: 1rem 3rem;
+    padding: 1rem 0.5rem;
     text-align: left;
   }
   
@@ -28,4 +28,16 @@ html {
 
   a {
     color: #e8d4b2;
+  }
+
+  @media screen and (min-width: 900px) {
+    div {
+      padding: 1rem 10%;
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
+    div {
+      padding: 1rem 25%;
+    }
   }
