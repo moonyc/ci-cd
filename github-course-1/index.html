@@ -8,8 +8,35 @@
   </head>
   <body>
     <h1>Git & GitHub Crash Course</h1>
-    <p> Because the basics are important!</p>
+    <h2> Because the basics are important!</h2>
     <p> bet I could still melt your world</p>
     <p> Argumentative, antithetical dream girl</p>
+
+    <p>Let's say you want to store the code of your projects on GitHub. <br/>
+      The first thing that you want to do is creating a remote repository. <br />
+      You will target this repository from your local environment, so that <br />
+      you will be able to create a stable pipeline from the directory you're working on <br/>
+      to the code that has been stored on the cloud.
+      In your local environment:
+      <ol>
+        <li> Make sure you have git installed <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git"> or install it</a> </li>
+        <li> Open the terminal and check that the path matches the directory's (example: /Users/user/your-project)</li>
+        <li> git init -> initialize git in your project</li>
+        <li> git status -> verify the current status of the files in the directory</li>
+        <li> git add file.pl or git add . to stage all the files in the directory </li>
+        <li> if you now run git status again you'll see thata bunch of files are ready to be committed</li>
+        <li> git commit -m "meaningful description of the current state of the project" ->commits are a stored version of you code base</li>
+        <li> git log -> this command returns a list of commits in the current branch</li>
+        <li> a branch, in git, is a pointer to a specific commit</li>
+        <li> git checkout commit_id -> lets you move temporarely to another commit. In other words it lets you <br/>
+        access a precedent state of your code base</li>
+        <li> now your current commit is detached from the original branch <br/>
+        so if you want to come back to your latest commit, you must execute git checkout name_of_the_branch</li>
+      </ol>
+    </p>
+
+    <li>
+
+    </li>
   </body>
 </html>
