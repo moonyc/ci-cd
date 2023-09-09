@@ -15,6 +15,11 @@ html {
     text-align: left;
   }
   
+  span {
+    font-weight: bold;
+    color:#5cafe7;
+  }
+  
   #logo {
     width: 7rem;
     height: 7rem;
@@ -46,12 +51,18 @@ html {
 
   @media screen and (min-width: 900px) {
     div {
-      padding: 1rem 10%;
+      padding: 1rem 17%;
     }
   }
 
   @media screen and (min-width: 1300px) {
     div {
       padding: 1rem 25%;
+    }
+  }
+
+  @media screen and (min-width: 1700px) {
+    div {
+      padding: 1rem 36%;
     }
   }
