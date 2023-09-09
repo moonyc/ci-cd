@@ -30,6 +30,20 @@ html {
     color: #e8d4b2;
   }
 
+  code {
+    font-size: 1rem;
+    background-color: #222024;
+    color: #dd9959;
+    border-radius: 0.3em;
+    padding: 3px 3px 7px;
+    white-space: break-alls;
+}
+  li {
+    padding: 3px;
+    line-height: 1.2;
+   
+  }
+
   @media screen and (min-width: 900px) {
     div {
       padding: 1rem 10%;

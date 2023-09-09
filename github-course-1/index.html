@@ -12,8 +12,8 @@
     <img id="logo" src="logo2.png" alt="A logo that contains the word 'Git'" />
     <h1>Git & GitHub Crash Course</h1>
     <h2> Because the basics are important!</h2>
-    <p> bet I could still melt your world <br/>
-      argumentative, antithetical dream girl
+    <p> "bet I could still melt your world <br/>
+      argumentative, antithetical dream girl"
     </p>
 
     <p>Let's say you want to store the code of your projects on GitHub. <br/>
@@ -27,26 +27,58 @@
         <ol>
           <li> Make sure you have git installed <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git"> or install it</a> </li>
           <li> Open the terminal and check that the path matches the directory's (example: /Users/user/your-project)</li>
-          <li> git init -> initialize git in your project</li>
-          <li> git status -> verify the current status of the files in the directory</li>
-          <li> git add file.pl or git add . to stage all the files in the directory </li>
-          <li> if you now run git status again you'll see thata bunch of files are ready to be committed</li>
-          <li> git commit -m "meaningful description of the current state of the project" ->commits are a stored version of you code base</li>
-          <li> git log -> this command returns a list of commits in the current branch</li>
-          <li> a branch, in git, is a pointer to a specific commit</li>
-          <li> press 'q' to exit the git log output</li>
-          <li> git checkout commit_id -> lets you move temporarely to another commit. In other words it lets you <br/>
+          <li> <code>git init</code> -> initialize git in your project</li>
+          <li> <code>git status</code> -> verify the current status of the files in the directory</li>
+          <li>  <code>git add file.pl</code> or <code>git add .</code> -> the first stages the designated file <br/>
+            the second stages all the files in the directory </li>
+          <li> if you now run <code>git status</code> again you'll see that bunch of files are ready to be committed</li>
+          <li> <code>git commit -m "meaningful description of the current state of the project"</code> ->commits are a stored version of you code base</li>
+          <li> <code>git log</code> -> this command returns a list of commits in the current branch: <br/>
+             a branch, in git, is a pointer to a specific commit</li>
+          <li> press <code>q</code> to exit the git log output</li>
+          <li> <code>git checkout commit_id</code> -> move temporarely to another commit. In other words it lets you <br/>
           access a precedent state of your code base</li>
           <li> now your current commit is detached from the original branch <br/>
-          so if you want to come back to your latest commit, you must execute git checkout name_of_the_branch</li>
-          <li> git reset --hard id_commit -> here the id indicates the destination you want to move your project's state to, <br/>
+          so if you want to come back to your latest commit, you must execute <code>git checkout name_of_the_branch</code></li>
+          <li> <code>git reset --hard id_commit</code> -> here the id indicates the destination you want to move your project's state to, <br/>
           eradicating all the changes made after.</li>
         </ol>
       </div>
     <p>Now you know some of the most important and the most common commands of git. <br/>
-    At this point what you want to do is to finally push your code on GitHub and <br/>
-    
+    At this point what you want to do is to finally push your code on GitHub and eventually organize<br/>
+    different and parallel collections of commits, each dedicated to a specific path or a specific feature. <br/>
+    In git an independent collection of commits is a branch. At initialization you commit on the master <br/> 
+    branch, and you rename it by executing the command <code>git branch -M main</code>, which is a standard, I guess. <br/>
+    Storing your codebase on GitHub is quite simple: first you create a repository on <a href="https://www.github.com">github.com</a> and then <br/>
+    in your local environment:
   </p>  
-    <p>I know my pain is such an imposition</p>
+  <div>
+    <ol>
+      <li><code>git remote add origin https://github.com/ yourHandle/ name-of-the-repository.git</code> <br/>
+        -> lets you target your repository online from the local environment</li>
+      <li><code>git push -u origin main</code> -> pushes the code base on the cloud.</li>
+    </ol>
+  </div>
+
+  <p>At this point you might wanna take some time to develop a specific feature, <br/>
+  while avoiding to influence the current state of your project. This is how you do it in <br/>
+  your local environment:</p>
+  <div>
+    <ol>
+      <li><code>git branch new-features-branch-name</code> -> create a new branch with the latest state of <br/>
+      your project as a starting point. You can develop the new feature in this new branch <br/>
+      without modifying the state of the main branch. When the new feature will reach a stable state, <br/>
+      you will be able to reintegrate the changes. </li>
+      <li><code>git merge target_branch_main</code> -> integrate the input branch and the target branch into <br/>
+      a single collection. You might need to solve a couple of inconsistencies manually.</li>
+      <li><code>git branch</code> -> shows all the exsting branches</li>
+      <li><code>git checkout target-branch</code> -> switch to the target branch. <br/>
+      You can use the same command to switch back</li>
+      <li><code>git branch -D target-branch</code> -> delete the target branch</li>
+      <li><code>git checkout -b new-target-branch</code> -> create a new branch and checkout in one step</li>
+    </ol>
+  </div>
+  
+    <p>"I know my pain is such an imposition"</p>
   </body>
 </html>
