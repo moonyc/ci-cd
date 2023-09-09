@@ -55,8 +55,14 @@
   <div>
     <ol>
       <li><code>git remote add origin https://github.com/ yourHandle/ name-of-the-repository.git</code> <br/>
-        -> lets you target your repository online from the local environment</li>
-      <li><code>git push -u origin main</code> -> pushes the code base on the cloud.</li>
+        ->  target your repository online from the local environment</li>
+      <li><code>git push -u origin main</code> -> push your commits on the cloud. 
+      <br/> the -u flag indicates that you're setting an upstream branch, which connects your local main branch 
+      to one with the same name in the cloud. If on github you don't have a main branch, this command will automatically create it. 
+    </li>
+    <li><code>git remote add origin https://youHandle@ github.com/ yourHandle/ name-of-the-repository.git</code> -> if you get a permission error, 
+    this command will let you authenticate. On <a href="https://www.github.com">github.com</a>'s account settings, create a Personal Access Token and 
+    paste it in the password field. You can also set up the ssh key to authenticate.</li>
     </ol>
   </div>
 
@@ -76,6 +82,7 @@
       You can use the same command to switch back</li>
       <li><code>git branch -D target-branch</code> -> delete the target branch</li>
       <li><code>git checkout -b new-target-branch</code> -> create a new branch and checkout in one step</li>
+      <li><code>git push origin new-features-branch-name</code> -> push your commits into a new branch on GitHub</li>
     </ol>
   </div>
   
