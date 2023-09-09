@@ -15,7 +15,7 @@
 
     <p>GitHub Actions is a workflow automation service offered by GitHub: <br/>
     it can automate all kind of possible repository processes. <br/>
-    We need to understand <span>three</span> fundamental building blocks to efficiently integrate <br/>
+    You need to understand <span>three</span> fundamental building blocks to efficiently integrate <br/>
     the service in our pipelines: <span>workflows, jobs and steps</span>. <br/>
     Workflows, jobs and steps are related to each other and to the code repository like this: 
     </p>
@@ -26,16 +26,26 @@
         You can add as many workflows as you want to a given repository.</li>
         <li>Workflows contain one or more jobs.</li>
         <li>Jobs contain one or more Steps</li>
+        <li>Every job defines a runner, which is the operating system used to <br/>
+        execute the steps</li>
+        <li>GitHub offer runners for Linux, Mac OS and Windows, but you can configure <br/>
+        your runners.</li>
+        <li>If you have multiple jobs, they run in parallel by default <br/>
+        but you can configure them to run in a sequential order.</li>
+        <li>You can setup conditional jobs.</li>
         <li>Steps define the actual commands that will be executed.</li>
+        <li>A steps is a shell script in the command line or an Action.</li>
+        <li>Actions are predefined script that perform a certain task</li>
+        <li>Steps are executed in sequential order.</li>
+        <li>Steps can be conditional</li>
       </ol>
     </div>
 
     <p>We build workflows to automate processes, consequentially <br/>
     we assign a trigger (or event) to each workflow, so that we're able to regulate <br/>
-    their execution's recurrence. An event could require manual activation, <br/>
+    their execution's recurrence. An <span>event </span>could require manual activation, <br/>
     but you could also trigger the a workflow whenever a commit is pushed to a certain branch.</p>
   
-    <p></p>
 
     <p>"Clover blooms in the fields <br/>
     Spring breaks loose, the time is near."
