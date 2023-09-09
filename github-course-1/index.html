@@ -10,7 +10,7 @@
   <body>
     <img id="logo" src="logo1.png" alt="A logo that contains the word 'Git'" />
     <img id="logo" src="logo2.png" alt="A logo that contains the word 'Git'" />
-    <h1>Git & GitHub Crash Course</h1>
+    <h1>Git & GitHub Minimal Guide</h1>
     <h2> Because the basics are important!</h2>
     <p> "bet I could still melt your world <br/>
       argumentative, antithetical dream girl"
@@ -65,12 +65,12 @@
   your local environment:</p>
   <div>
     <ol>
-      <li><code>git branch new-features-branch-name</code> -> create a new branch with the latest state of <br/>
-      your project as a starting point. You can develop the new feature in this new branch <br/>
-      without modifying the state of the main branch. When the new feature will reach a stable state, <br/>
+      <li><code>git branch new-features-branch-name</code> -> create a new branch with the latest <br/>state of 
+      your project as a starting point. You can develop the new feature in this new branch
+      without modifying the state of the main branch. When the new feature will reach a stable state, 
       you will be able to reintegrate the changes. </li>
-      <li><code>git merge target_branch_main</code> -> integrate the input branch and the target branch into <br/>
-      a single collection. You might need to solve a couple of inconsistencies manually.</li>
+      <li><code>git merge new-features-branch</code> -> integrate the the new branch and the target branch into <br/>
+      a single collection; execute the command from the target branch (ex: from main). You might need to solve a couple of inconsistencies manually.</li>
       <li><code>git branch</code> -> shows all the exsting branches</li>
       <li><code>git checkout target-branch</code> -> switch to the target branch. <br/>
       You can use the same command to switch back</li>
