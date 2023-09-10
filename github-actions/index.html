@@ -26,15 +26,15 @@
         You can add as many workflows as you want to a given repository.</li>
         <li>Workflows contain one or more jobs.</li>
         <li>Jobs contain one or more Steps</li>
-        <li>Every job defines a runner, which is the operating system used to <br/>
-        execute the steps</li>
+        <li>Every job defines a runner, which is the environment, ergo <br/> 
+          the operating system used to execute the steps.</li>
         <li>GitHub offer runners for Linux, Mac OS and Windows, but you can configure <br/>
         your runners.</li>
         <li>If you have multiple jobs, they run in parallel by default <br/>
         but you can configure them to run in a sequential order.</li>
         <li>You can setup conditional jobs.</li>
         <li>Steps define the actual commands that will be executed.</li>
-        <li>A steps is a shell script in the command line or an Action.</li>
+        <li>A steps is a shell script or an Action.</li>
         <li>Actions are predefined script that perform a certain task</li>
         <li>Steps are executed in sequential order.</li>
         <li>Steps can be conditional</li>
@@ -44,9 +44,32 @@
     <p>We build workflows to automate processes, consequentially <br/>
     we assign a trigger (or event) to each workflow, so that we're able to regulate <br/>
     their execution's recurrence. An <span>event </span>could require manual activation, <br/>
-    but you could also trigger the a workflow whenever a commit is pushed to a certain branch.</p>
-  
-
+    but you could also trigger the workflow whenever a commit is pushed to a certain branch.</p>
+    
+    <h2>A Simple Example:</h2>
+    <div>
+      <p><span>name:</span> Basic Workflow <br/>
+        <code>// This means that you will have to trigger it manually:</code> <br/>
+        <span>on:</span> workflow_dispatch <br/>
+        <span>jobs:</span> <br/>
+        <code>// Press tab to intend correctly:</code> <br/>
+        <span>&nbsp&nbspjob:</span> <br/>
+        <code>// Search "GitHub Actions runners"</code> <br/>
+        <span>&nbsp&nbsp&nbspruns-on:</span> ubuntu-lates <br/>
+        <span>&nbsp&nbsp&nbspsteps:</span> <br/>
+        <span>&nbsp&nbsp&nbsp&nbsp- name:</span> Print Hello <br/>
+        <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsprun:</span> echo "Hello Sasha" <br/>
+        <span>&nbsp&nbsp&nbsp&nbsp- name:</span> Print Goodbye <br/>
+        <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsprun:</span> echo "Goodbye Sasha"
+      </p>
+    </div>
+    <h2>Important To Note:</h2>
+    <div>
+      <ol>
+        <li>Actions and Workflows are not synonimous.</li>
+      </ol>
+    </div>
+      
     <p>"Clover blooms in the fields <br/>
     Spring breaks loose, the time is near."
     </p>
