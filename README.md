@@ -7,5 +7,6 @@ These are my notes from <a href="https://www.udemy.com/course/github-actions-the
 ## Examples:
 
 1. <a href="https://github.com/moonyc/ci-cd-example-1/">Multiple events, test-deploy workflow, GitHub Context</a>
-2. <a href="https://github.com/moonyc/ci-cd-example-2"> lint-test-deploy workflow, on issues event</a>
-3. <a href="https://github.com/moonyc/ci-cd-example-3"> activity types: pull_request. filters: push</a>
+2. <a href="https://github.com/moonyc/ci-cd-example-2">Lint-test-deploy workflow, on issues event</a>
+3. <a href="https://github.com/moonyc/ci-cd-example-3">Activity types: pull_request. filters: push</a>
+4. <a href="https://github.com/moonyc/ci-cd-example-4">Artifacts, Job Outputs, Caching dependencies
