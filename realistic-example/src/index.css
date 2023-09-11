@@ -39,6 +39,9 @@ main {
   background-color: #292d2d;
   border-radius: 8px;
   color: white;
+  box-shadow: 10px 10px 36px 9px rgba(11,10,10,0.41);
+-webkit-box-shadow: 10px 10px 36px 9px rgba(11,10,10,0.41);
+-moz-box-shadow: 10px 10px 36px 9px rgba(11,10,10,0.41);
 }
 
 button {
