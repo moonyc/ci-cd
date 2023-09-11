@@ -8,3 +8,4 @@ These are my notes from <a href="https://www.udemy.com/course/github-actions-the
 
 1. <a href="https://github.com/moonyc/ci-cd-example-1/">Multiple events, test-deploy workflow, GitHub Context</a>
 2. <a href="https://github.com/moonyc/ci-cd-example-2"> lint-test-deploy workflow, on issues event</a>
+3. <a href="https://github.com/moonyc/ci-cd-example-3"> activity types: pull_request</a>
