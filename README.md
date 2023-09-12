@@ -10,3 +10,4 @@ These are my notes from <a href="https://www.udemy.com/course/github-actions-the
 2. <a href="https://github.com/moonyc/ci-cd-example-2">Lint-test-deploy workflow, on issues event</a>
 3. <a href="https://github.com/moonyc/ci-cd-example-3">Activity types: pull_request. filters: push</a>
 4. <a href="https://github.com/moonyc/ci-cd-example-4">Artifacts, Job Outputs, Caching dependencies
+5. <a href="https://github.com/moonyc/ci-cd-example-5">Environment variables and secrets</a>
