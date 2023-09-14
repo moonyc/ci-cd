@@ -13,7 +13,8 @@ These are my notes from <a href="https://www.udemy.com/course/github-actions-the
 5. <a href="https://github.com/moonyc/ci-cd-example-5">Environment variables and secrets</a>
 6. <a href="https://github.com/moonyc/ci-cd-example-6">If, continue-on-error, Matrix strategies</a>
 7. <a href="https://github.com/moonyc/ci-cd-example-7">Jobs and Docker container</a>
-8. <a href="https://github.com/moonyc/ci-cd-example-8">Custom actions: composite and javascript</a>
-   - example: <a href="https://github.com/moonyc/javascript-action">AWS S3 Deploy </a>
-8. <a href="https://github.com/moonyc/ci-cd-example-9">Custom actions: docker</a>
+8. <a href="https://github.com/moonyc/ci-cd-example-8">Custom actions: composite, javascript and docker</a>
+   - example: <a href="https://github.com/moonyc/javascript-action">AWS S3 Deploy: javascript action </a>
+   - example: <a href="https://github.com/moonyc/docker-action">AWS S3 Deploy: docker action </a>
+8. <a href="https://github.com/moonyc/ci-cd-example-9">Permissions and security</a>
 
