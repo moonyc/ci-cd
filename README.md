@@ -13,5 +13,6 @@ These are my notes from <a href="https://www.udemy.com/course/github-actions-the
 5. <a href="https://github.com/moonyc/ci-cd-example-5">Environment variables and secrets</a>
 6. <a href="https://github.com/moonyc/ci-cd-example-6">If, continue-on-error, Matrix strategies</a>
 7. <a href="https://github.com/moonyc/ci-cd-example-7">Jobs and Docker container</a>
-8. <a href="https://github.com/moonyc/ci-cd-example-8">Custom actions</a>
+8. <a href="https://github.com/moonyc/ci-cd-example-8">Custom actions: composite and javascript</a>
+8. <a href="https://github.com/moonyc/ci-cd-example-9">Custom actions: docker</a>
 
